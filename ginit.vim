@@ -2,7 +2,7 @@
 set mouse=a
 
 " Set Editor Font
-let s:fontsize = 20
+let s:fontsize = 13
 let s:fontname = "Hack Nerd Font Mono"
 
 if exists(':GuiFont')
