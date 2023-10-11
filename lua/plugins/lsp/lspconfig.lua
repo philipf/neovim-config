@@ -70,6 +70,18 @@ return {
 			vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 		end
 
+		lspconfig["bicep"].setup({
+			capabilities = capabilities,
+			on_attach = on_attach,
+			cmd = { "bicep-lsp" },
+			filetypes = { "bicep" },
+		})
+
+		lspconfig["csharp_ls"].setup({
+			capabilities = capabilities,
+			on_attach = on_attach,
+		})
+
 		-- configure html server
 		lspconfig["html"].setup({
 			capabilities = capabilities,
