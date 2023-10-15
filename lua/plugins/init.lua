@@ -3,5 +3,6 @@ return {
 	"christoomey/vim-tmux-navigator",
 	"github/copilot.vim",
 	"carlsmedstad/vim-bicep",
-	"ikatyang/tree-sitter-yaml",
+	-- "ikatyang/tree-sitter-yaml",
+	"mg979/vim-visual-multi",
 }
