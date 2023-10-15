@@ -4,8 +4,8 @@ return {
 		event = { "BufReadPre", "BufNewFile" },
 		build = ":TSUpdate",
 		dependencies = {
-			"nvim-treesitter/nvim-treesitter-textobjects",
-			"windwp/nvim-ts-autotag",
+			-- "nvim-treesitter/nvim-treesitter-textobjects",
+			-- "windwp/nvim-ts-autotag",
 		},
 		config = function()
 			-- import nvim-treesitter plugin
@@ -13,6 +13,8 @@ return {
 
 			-- configure treesitter
 			treesitter.setup({ -- enable syntax highlighting
+
+				ignore_install = { "yaml" },
 				highlight = {
 					enable = true,
 				},
@@ -26,7 +28,7 @@ return {
 				ensure_installed = {
 					"json",
 					"javascript",
-					"yaml",
+					--"yaml",
 					-- "html",
 					-- "css",
 					"markdown",
