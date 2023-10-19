@@ -5,4 +5,5 @@ return {
 	"carlsmedstad/vim-bicep",
 	-- "ikatyang/tree-sitter-yaml",
 	"mg979/vim-visual-multi",
+	"tpope/vim-fugitive",
 }
